@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Landing page para serviço de criação de landing pages com tema dark, design moderno e interativo.">
+    <title>Landing Page - Desenvolvedor Web</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="intro" class="intro-container">
+        <div class="intro-content">
+            <h1 class="intro-title">Bem-vindo ao Seu Futuro!</h1>
+            <p class="intro-subtitle">Transformando Cliques em Clientes</p>
+        </div>
+    </div>    
+
+    <header>
+        <nav>
+            <div class="hamburger" id="hamburger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+            <ul id="navMenu">
+                <li><a href="#home">Início</a></li>
+                <li><a href="#benefits">Benefícios</a></li>
+                <li><a href="#profile">Sobre Mim</a></li>
+                <li><a href="#contact">Contato</a></li>
+            </ul>
+        </nav>
+
+        <div class="hero">
+            <picture>
+                <source media="(max-width: 768px)" srcset="imagens/banner-small.jpg">
+                <source media="(min-width: 769px)" srcset="imagens/banner-large.jpg">
+                <img src="banner-large.jpg" alt="Banner de fundo" class="hero-background">
+
+            </picture>
+            <div class="hero-content">
+                <h1>Transforme Cliques em Clientes</h1>
+                <p>Landing Pages Criadas para Maximizar Suas Conversões</p>
+                <a href="#contact" class="btn">Solicite um Orçamento</a>
+            </div>
+        </div>
+    </header>
+
+    <section id="benefits" class="benefits">
+        <h2>Por Que Escolher Nossos Serviços?</h2>
+        <div class="benefits-grid">
+            <div class="benefit-item">
+                <i class="icon-design"></i>
+                <h3>Design Moderno</h3>
+                <p>Layout atrativo e intuitivo que captura a atenção do seu público.</p>
+            </div>
+            <div class="benefit-item">
+                <i class="icon-usability"></i>
+                <h3>Usabilidade Focada</h3>
+                <p>Experiência do usuário fluida e otimizada para conversões.</p>
+            </div>
+            <div class="benefit-item">
+                <i class="icon-seo"></i>
+                <h3>SEO Otimizado</h3>
+                <p>Páginas preparadas para alcançar as melhores posições nos buscadores.</p>
+            </div>
+            <div class="benefit-item">
+                <i class="icon-responsive"></i>
+                <h3>Design Responsivo</h3>
+                <p>Seu site acessível e bonito em qualquer dispositivo.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta">
+        <h2>Não Perca Tempo, Melhore Seus Resultados Hoje Mesmo!</h2>
+        <p>Garanta sua landing page com 20% de desconto para as primeiras 10 contratações!</p>
+        <a href="#contact" class="btn">Contrate Agora</a>
+    </section>
+
+    <section id="profile" class="profile">
+        <h2>Sobre Mim</h2>
+        <div class="profile-container">
+            <img src="imagens/profile.png" alt="Minha Foto de Perfil no LinkedIn" class="profile-pic">
+            <div class="profile-info">
+                <h3>Samuel de Freitas Malta Junior</h3>
+                <p>Desenvolvedor Web especializado em front-end, focado na criação de landing pages eficazes e visualmente atraentes. Vamos conectar!</p>
+                <a href="https://www.linkedin.com/in/samuel-de-freitas-malta-junior-36304420a/" target="_blank" class="btn">Siga no LinkedIn</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact-form">
+        <h2>Solicite um Orçamento</h2>
+        <form action="https://formspree.io/f/xovaywed" method="POST" id="leadForm">
+            <label for="name">Nome Completo:</label>
+            <input type="text" id="name" name="name" required>
+        
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required>
+        
+            <label for="phone">Whatsapp:</label>
+            <input type="tel" id="phone" name="phone">
+        
+            <label for="website">Website Atual (se aplicável):</label>
+            <input type="url" id="website" name="website">
+        
+            <label for="objective">Objetivo da Landing Page:</label>
+            <textarea id="objective" name="objective" required></textarea>
+        
+            <label for="budget">Orçamento Aproximado (opcional):</label>
+            <input type="text" id="budget" name="budget" placeholder="R$ 0,00" required oninput="formatCurrency(this)">
+        
+            <label for="deadline">Prazo para Implementação:</label>
+            <input type="date" id="deadline" name="deadline" required>
+        
+            <label for="message">Mensagem:</label>
+            <textarea id="message" name="message"></textarea>
+        
+            <button type="submit" class="btn">Solicitar Orçamento</button>        
+        </form>
+    </section>
+
+    <footer>
+        <div class="footer-container">
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/samuel-de-freitas-malta-junior-36304420a/" target="_blank" class="social-icon">
+                    <img src="imagens/linkedin-icon.svg" alt="LinkedIn">
+                </a>
+                <a href="https://www.instagram.com/_samuca.jr" target="_blank" class="social-icon">
+                    <img src="imagens/instagram-icon.svg" alt="Instagram">
+                </a>
+                <a href="https://wa.me/+5511983592947" target="_blank" class="social-icon">
+                    <img src="imagens/whatsapp-icon.svg" alt="WhatsApp">
+                </a>
+            </div>
+    
+            <div class="footer-info">
+                <p>&copy; 2024 Desenvolvedor Web. Todos os direitos reservados.</p>
+                <a href="#lgpd-modal" class="lgpd-link">Política de Privacidade</a>
+            </div>
+        </div>
+    
+        <div id="lgpd-modal" class="lgpd-modal">
+            <div class="lgpd-modal-content">
+                <h2>Política de Privacidade</h2>
+                <p>
+                    Este site utiliza cookies para melhorar a experiência do usuário. Ao continuar navegando, você concorda com o uso de cookies.
+                    <br><br>
+                    Para mais informações, consulte nossa <a href="política-privacidade.html" target="_blank">Política de Privacidade</a>.
+                </p>
+                <button id="close-lgpd-modal" class="btn">Fechar</button>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
