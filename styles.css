@@ -839,7 +839,7 @@ p {
 
 /* Rodapé fixado ao fundo */
 footer {
-    position: relative;
+    position: center;
     bottom: 0;
     width: 100%;
 }
